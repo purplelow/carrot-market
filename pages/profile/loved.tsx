@@ -1,12 +1,15 @@
 import type { NextPage } from "next";
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 
-const Home: NextPage = () => {
+const Loved: NextPage = () => {
   return (
-    <Layout title="홈" hasTabBar>
-      <div className="flex flex-col divide-y-[1px]">
+    <Layout title="관심목록" canGoBack>
+      <div className="flex flex-col divide-y-[1px] pb-10">
         {new Array(10).fill(2).map((_, i) => (
-          <div key={i} className="flex cursor-pointer justify-between p-4">
+          <div
+            key={i}
+            className="flex cursor-pointer justify-between border-b p-4"
+          >
             <div className="flex space-x-4">
               <div className="h-20 w-20 rounded-md bg-gray-400" />
               <div className="flex flex-col pt-2">
@@ -55,26 +58,9 @@ const Home: NextPage = () => {
             </div>
           </div>
         ))}
-        <button className="fixed bottom-24 right-5 rounded-full bg-orange-400 p-4 text-white shadow-xl transition-colors hover:bg-orange-500">
-          <svg
-            className="h-6 w-6"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-            />
-          </svg>
-        </button>
       </div>
     </Layout>
   );
 };
 
-export default Home;
+export default Loved;

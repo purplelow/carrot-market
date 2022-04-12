@@ -128,7 +128,7 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      {/* <div className="rounded-3xl bg-white p-10 shadow-xl">
+      <div className="rounded-3xl bg-white p-10 shadow-xl">
         <form className="flex flex-col space-y-2 p-5">
           <input
             type="text"
@@ -157,7 +157,7 @@ const Home: NextPage = () => {
           type="file"
           className="file:cursor-wait file:rounded-xl file:border-0 file:bg-purple-300 file:px-5 file:text-white file:transition-colors"
         />
-      </div> */}
+      </div>
     </div>
   );
 };
