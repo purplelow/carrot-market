@@ -10,7 +10,9 @@ const Profile: NextPage = () => {
           <div className="h-16 w-16 rounded-full bg-slate-500" />
           <div className="flex flex-col">
             <span className="text-gra-900 font-medium">Steve Jebs</span>
-            <span className="text-sm text-gray-700">Edit profile &rarr;</span>
+            <Link href="/profile/edit">
+              <a className="text-sm text-gray-700">Edit profile &rarr;</a>
+            </Link>
           </div>
         </div>
         <div className="mt-10 flex justify-around">
