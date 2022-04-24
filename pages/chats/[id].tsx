@@ -9,8 +9,8 @@ const ChatDetail: NextPage = () => {
         <Message message="Hi how much are you sleeing item for?" />
         <Message message="I want ₩20,000" reversed />
         <Message message="와우" />
-        <form className="fixed inset-x-0 bottom-0 max-w-md">
-          <div className="relative mx-auto flex w-full items-center">
+        <form className="fixed inset-x-0 bottom-0 py-2">
+          <div className="relative mx-auto flex w-full max-w-md  items-center">
             <input
               type="text"
               className="w-full rounded-full border-gray-300 pr-12 shadow-sm focus:border-orange-500 focus:outline-none focus:ring-orange-500"
