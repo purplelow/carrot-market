@@ -7,7 +7,7 @@ export default async function handler(
 ) {
   await client.user.create({
     data: {
-      email: "a",
+      email: "ab",
       name: "js",
     },
   });
