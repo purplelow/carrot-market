@@ -97,14 +97,15 @@ async function handler(
     });
     console.log("message ::: ", message); */
   } else if (email) {
-    /* const email = await mail.send({
+    const email = await mail.send({
       from: "purplelow1@gmail.com",
       to: "purplelow1@gmail.com",
       subject: "Your Carrot Market Verification Email",
       text: `Your token is ${payload}`,
       html: `<strong>Your token is ${payload}</strong>`,
     });
-    console.log("email ::: ", email); */
+    console.log("email ::: ", email);
+    console.log("mail ::: ", mail);
   }
   return res.json({
     ok: true,
